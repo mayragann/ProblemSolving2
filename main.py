@@ -47,10 +47,10 @@ def fibonacci(num):
     num2 = 1
     series = 0
     for i in range(num):
-        print(series, end=' ');
-        num1 = num2;
-        num2 = series;
-        series = num1 + num2;
+        print(series, end=' ')
+        num1 = num2
+        num2 = series
+        series = num1 + num2
  
  
 # running function after takking user input
