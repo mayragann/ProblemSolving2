@@ -42,18 +42,26 @@
 # in other words: f1-1+1 =2, f2-1+2=3, 2+3=5, f3-3+5 =8.  f4-5+8=13 so on and so on..
 # series is the F1 number
 # num1 and numb 2 are the numbers that are being added together
-def fibonacci(num):
-    num1 = 0
-    num2 = 1
-    series = 0
-    for i in range(num):
-        print(series, end=' ')
-        num1 = num2
-        num2 = series
-        series = num1 + num2
+# def fibonacci(num):
+#     num1 = 0
+#     num2 = 1
+#     series = 0
+#     for i in range(num):
+#         print(series, end=' ')
+#         num1 = num2
+#         num2 = series
+#         series = num1 + num2
  
  
-# running function after takking user input
-num = int(input('Enter how many numbers needed in Fibonacci series- '))
-fibonacci(num)
+# # running function after takking user input
+# num = int(input('Enter how many numbers needed in Fibonacci series- '))
+# fibonacci(num)
     
+
+shoping_list = ["apples", "bananas", "carrots"]
+
+
+item = input("Enter the item that you would like to remove to shopping list: ")
+
+shoping_list.remove(item)
+print(shoping_list)
