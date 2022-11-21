@@ -1,3 +1,5 @@
+from collections import Counter
+
 
 # happy numbers
 # loop that continues until number = 1 happy
@@ -58,10 +60,29 @@
 # fibonacci(num)
     
 
-shoping_list = ["apples", "bananas", "carrots"]
+# shoping_list = ["apples", "bananas", "carrots"]
 
 
-item = input("Enter the item that you would like to remove to shopping list: ")
+# item = input("Enter the item that you would like to remove to shopping list: ")
 
-shoping_list.remove(item)
-print(shoping_list)
+# shoping_list.remove(item)
+# print(shoping_list)
+
+list =["cat", "dog" ,"bird", "parrot" ,"hi", "name" ,"cat", "heep"]
+
+count_a = list.count('cat')
+print(f'{count_a=}')
+
+thisList=[]
+thisList.append("cat")
+print(thisList)
+thisList.remove("cat")
+thisList.extend(("cat", "dog", "bird"))
+print(thisList)
+
+number = 3
+possible_words=[]
+for word in list:
+    if len(word)==number:
+        possible_words.append(word)
+print(possible_words)
