@@ -68,7 +68,7 @@ from collections import Counter
 # shoping_list.remove(item)
 # print(shoping_list)
 
-list =["cat", "dog" ,"bird", "parrot" ,"hi", "name" ,"cat", "heep"]
+list =["cat", "dog" ,"bird", "parrot" ,"hi", "name" ,"cat", "heep", "hi", "parrot"]
 
 count_a = list.count('cat')
 print(f'{count_a=}')
@@ -86,3 +86,10 @@ for word in list:
     if len(word)==number:
         possible_words.append(word)
 print(possible_words)
+
+print("Duplicate animals")
+
+for i in range(0, len(list)):
+    for j in range(i+1, len(list)):
+        if(list[i]==list[j]):
+            print(list[j])
